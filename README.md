@@ -6,7 +6,7 @@ the size of the critical section and the time of use.
 The project is made up of three distinct modules: the simulation module for simulating data contention; the module for the creation of a prediction model 
 based on machine learning through the **ML.NET** library; the orchestrator module for management and orchestration of simulation and prediction module.
 The simulations are parametric and allow you to change the configurations at will. 
-The system will take care of the simulations and the creation of a predictive model through machine learning.
+The system will take care of the simulations and the creation of a predictive model through machine learning. The final purpose is to predict the waiting time of a thread to access the critical section.
 
 ### Architecture
 ![Alt text](/wiki/img/Architecture.png?raw=true)
@@ -51,7 +51,7 @@ of the machine learning model and the size, in percentage, of the training set.
 To start the project, simply launch the **CriticalSectionOrchestrator** project on VS after having appropriately configured the parameters for the simulation in the JSON file.
 
 ### Result
-At the end of the simulation and construction of the machine learning model, the distribution graph will be presented to assess the reliability of the model obtained.
+At the end of the simulation and construction of the machine learning model, the distribution graph will be presented to assess the reliability of the model obtained. The ML model will be compared with the simulation results in terms of waiting time for the threads to access the critical section.
 
 ![Alt text](/wiki/img/RegressionDistribution.png?raw=true)
 
