@@ -50,9 +50,14 @@ of the machine learning model and the size, in percentage, of the training set.
 ### Usage
 To start the project, simply launch the **CriticalSectionOrchestrator** project on VS after having appropriately configured the parameters for the simulation in the JSON file.
 
+### Result
+At the end of the simulation and construction of the machine learning model, the distribution graph will be presented to assess the reliability of the model obtained.
+
+![Alt text](/wiki/img/RegressionDistribution.png?raw=true)
+
 ### ML.NET
 ML.NET is an open source and cross-platform machine learning framework, below the references of the project:
- * [Main Site] (https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
+ * [MainSite] (https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
  * [GitHub] (https://github.com/dotnet/machinelearning)
 
 ### Contributing
