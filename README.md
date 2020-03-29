@@ -52,8 +52,8 @@ To start the project, simply launch the **CriticalSectionOrchestrator** project 
 
 ### ML.NET
 ML.NET is an open source and cross-platform machine learning framework, below the references of the project:
-	* https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet
-	* https://github.com/dotnet/machinelearning
+ * [Main Site] (https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
+ * [GitHub] (https://github.com/dotnet/machinelearning)
 
 ### Contributing
 Thank you for considering to help out with the source code! We welcome contributions from anyone on the internet, and are grateful for even the smallest of fixes!
