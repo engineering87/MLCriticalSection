@@ -116,7 +116,7 @@ namespace CriticalSectionPrediction
                 const int x1 = 1;
                 var y1 = (m * x1) + b;
 
-                const int x2 = 1000;
+                var x2 = xMaxLimit;
                 //Function for Y2 in the line
                 var y2 = (m * x2) + b;
 
