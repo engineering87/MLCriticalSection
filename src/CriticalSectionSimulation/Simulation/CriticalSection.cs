@@ -53,13 +53,13 @@ namespace CriticalSectionSimulation.Simulation
 
                 while (true)
                 {
-                    // check for thread cancellation request
-                    if (cancellationToken.IsCancellationRequested)
-                        return;
-
                     // get the first critical section available slot
                     for (var i = 0; i < CriticalSectionList.Count; i++)
                     {
+                        // check for thread cancellation request
+                        if (cancellationToken.IsCancellationRequested)
+                            return;
+
                         var obj = CriticalSectionList[i];
                         if (Monitor.TryEnter(obj))
                         {
