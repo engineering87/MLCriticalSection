@@ -84,15 +84,18 @@ namespace CriticalSectionOrchestrator
                             w <= simulation.MaxTimeOnSection;
                             w += CriticalSectionTimeStep)
                         {
-                            // iterate over the partial...
+#if DEBUG
+                            Console.WriteLine(
+                                $"SimulateConfiguration " +
+                                $"thread={t} " +
+                                $"criticalSectionDimension={c} " +
+                                $"criticalSectionTime={w}");
+#endif
+                            // iterate over the partial step
                             for (var p = 0;
                                 p <= simulation.PartialSimulationDimension;
                                 p++)
                             {
-#if DEBUG
-                                Console.WriteLine($"SimulateConfiguration thread={t} criticalSectionDimension={c} criticalSectionTime={w}");
-#endif
-
                                 var currentSimulation = new CurrentSimulation()
                                 {
                                     ThreadNumber = t,
@@ -107,6 +110,9 @@ namespace CriticalSectionOrchestrator
                         }
                     }
                 }
+
+                // simulation.TotalSimulationDimension < possible configurations
+                break;
             }
 
             // stop all running threads
