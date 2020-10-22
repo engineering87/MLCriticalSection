@@ -1,18 +1,18 @@
 # MLCriticalSection
-This is a project developed in **.NET Core** and **ML.NET** library for the analysis and prediction of data contention by varying various parameters, such as the number of threads, 
-the size of the critical section and the time of use.
+This is a project developed in **.NET Core** and **ML.NET** library for the analysis and prediction of data contention in lock based system by varying various parameters, such as the number of threads, 
+the size of the critical section and the time of use. The final purpose is to predict the waiting time of a thread to access the critical section.
 
 ### How it works
 The project is made up of three distinct modules: the simulation module for simulating data contention; the module for the creation of a prediction model 
 based on machine learning through the **ML.NET** library; the orchestrator module for management and orchestration of simulation and prediction module.
 The simulations are parametric and allow you to change the configurations at will. 
-The system will take care of the simulations and the creation of a predictive model through machine learning. The final purpose is to predict the waiting time of a thread to access the critical section.
+The system will take care of the simulations and the creation of a predictive model through machine learning.
 
 ### Architecture
 ![Alt text](/wiki/img/Architecture.png?raw=true)
 
 ### The Case Study
-The case sudy is a didactic simulation of the data contention in a concurrent environment. The critical section is represented as a circular list of objects, a set of threads 
+The case study is a didactic simulation of the data contention in a concurrent environment. The critical section is represented as a circular list of objects, a set of threads 
 tries to access the critical section by scanning the list in search of a non-locked slot.
 
 ![Alt text](/wiki/img/CaseStudy.png?raw=true)
